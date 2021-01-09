@@ -1,0 +1,47 @@
+.contact {
+  border-radius: 15px;
+  position: relative;
+  height: 55vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  background-color: white;
+  margin: 5% 30%;
+  padding: 10px 15px;
+}
+.information {
+  right: 70%;
+  bottom: 5%;
+  position: absolute;
+  text-align: left;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: crimson;
+  color: white;
+}
+.send {
+  background-color: crimson;
+  color: white;
+  border-radius: 20%;
+  font-size: large;
+}
+.field {
+  width: 50%;
+  height: 30px;
+}
+.textfield {
+  width: 50%;
+}
+.closebtn {
+  margin: 0%;
+  position: absolute;
+  top: 1%;
+  right: 0px;
+}
+
+input {
+  border-bottom: 2px solid rebeccapurple;
+}

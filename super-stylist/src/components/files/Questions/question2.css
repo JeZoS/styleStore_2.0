@@ -1,0 +1,44 @@
+.ques2 {
+    margin:auto;
+    height: 500px;
+    width:800px;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10%;
+   
+}
+
+.fair,.medium,.dark {
+
+ margin-left: 50px;
+ margin-right: 50px;
+ margin-top: 10px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: xx-large;
+}
+
+.tone {
+    font-family: cursive;
+}
+
+.fair {
+    background-color:rgb(250, 179, 128);
+    color: rgb(250, 179, 128);
+}
+
+.medium {
+    background-color:rgb(241, 153, 90);
+    
+    color:rgb(241, 153, 90);
+}
+
+.dark {
+    background-color: rgb(158, 73, 12);
+    color:rgb(158, 73, 12);
+}
+
+.three {
+    height: 350px;
+    width:auto;
+    overflow: hidden;
+}

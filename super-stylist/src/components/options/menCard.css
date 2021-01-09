@@ -1,0 +1,18 @@
+.container {
+    padding:2%;
+    background-color: white;
+   font-size: large;
+   font-weight: bold;
+    width:20%;
+    position: absolute;
+    top:21%;
+    left:0%;
+   
+}
+.linkItem:link {
+    color: black;
+}
+.men {
+    color: crimson;
+    font-size: x-large;
+}

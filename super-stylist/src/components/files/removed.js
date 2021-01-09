@@ -1,0 +1,1 @@
+<div className="sideImg"><img src="https://cdn1.vectorstock.com/i/1000x1000/66/95/fashion-woman-with-quote-vector-34986695.jpg" style={{height:"590px",width:"600px"}}/></div>

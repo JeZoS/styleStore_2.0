@@ -1,0 +1,21 @@
+.complete {
+    margin:2% auto 0% auto;
+    height: 500px;
+    width:800px;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10px;
+    font-family: cursive;
+   
+}
+.home {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color:white;
+    background-color: crimson;
+}
+.left {
+    height: 400px;
+    
+    overflow: hidden;
+}

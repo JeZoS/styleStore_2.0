@@ -1,0 +1,48 @@
+.ques1 {
+    margin:auto;
+    height: 500px;
+    width:800px;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10%;
+   
+}
+
+.gender {
+    font-family: cursive;
+}
+
+.male,.female {
+    display:inline;
+    
+height:50px;
+width:50px;
+ margin-left: 50px;
+ margin-right: 50px;
+ margin-top: 10px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-weight: bold;
+
+ 
+}
+
+.male {
+    color: rgb(196, 108, 7);
+}
+
+.female {
+    color: rgb(226, 12, 48);
+}
+.prev {
+    font-size: x-large;
+    float: left;
+    position:absolute;
+    top:40%;
+
+}
+.next {
+    font-size: x-large;
+    float: right;
+    position: relative;
+    top:auto
+}

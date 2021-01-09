@@ -1,0 +1,73 @@
+.navbar-bran,
+.stylist {
+  display: inline-block;
+  color: crimson;
+  font-size: 80px;
+}
+
+.Login {
+  color: black;
+}
+
+.Login,
+.wishlist,
+.About,
+.Contact {
+  color: black;
+  padding: 0 10px;
+}
+
+.containers {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 80%;
+  display: flex;
+  height: 100vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  color: pink;
+  font-size: 20px;
+}
+.tag {
+  color: pink;
+  font-size: 30px;
+}
+.welcome {
+  color: pink;
+  font-size: 50px;
+}
+.start {
+  background-color: rgb(201, 0, 40);
+  font-size: 20px;
+  margin-top: 2%;
+  padding: 5px 10px;
+  width: 35%;
+  color: pink;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.fas {
+  transform: scale(1.5);
+  margin-right: 10px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.bbgg {
+  background-image: url(https://images.unsplash.com/photo-1551754479-aeca1281acf4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button:active {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}

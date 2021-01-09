@@ -1,0 +1,22 @@
+.ques3 {
+    margin:auto;
+    height: 500px;
+    width:800px;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10%;
+   
+}
+
+.short,.mediumht,.tall {
+
+ margin-left: 50px;
+ margin-right: 50px;
+ margin-top: 10px;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: x-large;
+}
+
+.height {
+    font-family: cursive;
+}

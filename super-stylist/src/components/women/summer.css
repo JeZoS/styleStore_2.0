@@ -1,0 +1,66 @@
+.summers {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  right: 0;
+  padding-top: 100px;
+}
+
+.filter_bar {
+  position: fixed;
+  padding-top: 100px;
+  display: flex;
+  height: 100%;
+  width: 20%;
+  padding-left: 20px;
+  justify-content: start;
+}
+
+.filter_bar button {
+  margin: 10px;
+}
+
+.summers div {
+  background-color: rgb(254, 171, 185);
+  margin: 5px;
+  height: 300px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.summers div img {
+  width: 100%;
+  z-index: 1;
+}
+
+.summers div h4 {
+  position: absolute;
+  text-align: start;
+  text-decoration: none;
+  color: white;
+  border-right: 1px solid pink;
+  width: 50%;
+  background-color: rgb(214, 31, 214);
+  padding: 10px;
+  z-index: 9;
+  bottom: 0;
+}
+
+.summers div div {
+  position: absolute;
+  text-align: end;
+  width: 50%;
+  height: 39px;
+  padding: 10px;
+  color: rebeccapurple;
+  bottom: 5px;
+  right: 0;
+}
+
+input[type="radio"] {
+  transform: scale(0.8);
+  margin-right: 10px;
+}

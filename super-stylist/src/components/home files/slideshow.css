@@ -1,0 +1,38 @@
+.explorebox {
+  position: fixed;
+  top: 200px;
+  left: 0%;
+  font-family: Cambria, Cochin, Georgia, Times, "Segoe Script", serif;
+  font-size: 45px;
+  color: black;
+  background-color: pink;
+  width: 100%;
+  text-align: center;
+}
+.contain {
+  margin-top: 2%;
+}
+.banner {
+  position: absolute;
+  left: 10%;
+  font-weight: 500;
+  font-style: oblique;
+  text-align: center;
+  top: 200px;
+  font-size: 50px;
+  width: 100%;
+  color: white;
+}
+.ban {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  left: 10%;
+  top: 200px;
+  width: 80%;
+  height: 20%;
+}
+
+img {
+  object-fit: contain;
+}

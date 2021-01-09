@@ -1,0 +1,32 @@
+.options {
+  margin-top:1%;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 120%;
+  font-weight: bold;
+  background-color: pink;
+  color: black;
+}
+.Men,
+.Women,
+.LookBook,
+.FashionTips {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+}
+.Home {
+  color: black;
+}
+.options_Login {
+  display: flex;
+  justify-content: space-between;
+}
+.all_links {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+
