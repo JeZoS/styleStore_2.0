@@ -9,9 +9,12 @@ app.use(bodyParser.json());
 
 const productRoutes = require("./routes/product");
 const userRoutes = require("./routes/userRoutes");
+const favRoutes = require("./routes/favRourtes");
 
 app.use("/products", productRoutes);
 
 app.use("/user", userRoutes);
+
+app.use("/fav", favRoutes);
 
 module.exports = app;

@@ -1,4 +1,4 @@
-.explorebox {
+/* .explorebox {
   position: fixed;
   top: 200px;
   left: 0%;
@@ -35,4 +35,11 @@
 
 img {
   object-fit: contain;
+} */
+
+.react_carousel {
+  padding-top: 100px;
+}
+.react_carousel div p {
+  display: none;
 }

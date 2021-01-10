@@ -4,11 +4,15 @@ import MainPage from "../Main/mainpage";
 import { useDispatch, useSelector } from "react-redux";
 import "../women/summer.css";
 import { getMensSummer } from "../../actions/getProducts";
+import axios from "axios";
 
 const SummerMen = () => {
   const [tone, setTone] = useState("");
   const [body, setBody] = useState("");
   const dispatch = useDispatch();
+
+  const USER = useSelector((state) => state.user);
+  const { loggedIn, user } = USER;
 
   const settonehandler = (e) => {
     setTone(e.target.value);
@@ -16,6 +20,19 @@ const SummerMen = () => {
 
   const setbodyhandler = (e) => {
     setBody(e.target.value);
+  };
+
+  const favHandler = async (id, img) => {
+    console.log(id, img);
+    if (loggedIn) {
+      const config = {
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      };
+      const { data } = await axios.post(`/fav/${id}`, { img }, config);
+      console.log(data);
+    }
   };
 
   const MensSummer = useSelector((state) => state.MensSummer);
@@ -136,11 +153,15 @@ const SummerMen = () => {
         <div className="summers" style={{ paddingTop: "100px" }}>
           {products.map((el, idx) => (
             <div key={idx}>
-              <Link to="#">
-                <div className="heart">
-                  <i className="fas fa-heart" style={{ color: "white" }}></i>
-                </div>
-              </Link>
+              <div className="heart">
+                <i
+                  className="fas fa-heart"
+                  onClick={() => {
+                    favHandler(el._id, el.src);
+                  }}
+                  style={{ color: "white" }}
+                ></i>
+              </div>
               <img src={el.src} alt="f"></img>
               <Link to={`/product/${el._id}`}>
                 <h4>Explore</h4>

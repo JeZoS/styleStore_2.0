@@ -66,7 +66,6 @@ const MainPage = () => {
           <Link className="Men" to="/Men">
             Men
           </Link>
-
           <Link className="Women" to="/Women">
             Women
           </Link>

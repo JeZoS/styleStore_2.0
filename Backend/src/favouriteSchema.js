@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const favSchema = mongoose.Schema({
   user: {
@@ -13,10 +13,12 @@ const favSchema = mongoose.Schema({
         required: true,
         ref: "Product",
       },
-      image: {
+      img: {
         type: String,
         required: true,
       },
     },
   ],
 });
+
+module.exports = Fav = mongoose.model("favSchema", favSchema);
