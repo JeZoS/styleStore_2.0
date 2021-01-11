@@ -60,7 +60,6 @@ const MainPage = () => {
           </div>
         </nav>
       </header>
-
       <div className="options" style={{ display: "flex" }}>
         <div>
           <Link className="Men" to="/Men">

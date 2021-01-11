@@ -5,3 +5,64 @@
 .profile_username {
   text-transform: uppercase;
 }
+
+.fav_item_card img {
+  height: 250px;
+  width: 150px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+.fav_item_card {
+  position: relative;
+  background-color: lightcoral;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+  margin: 9px;
+}
+
+.fav_item_container {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.remove_fav {
+  color: red;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+}
+
+.cross_text {
+  background-color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: rebeccapurple;
+  font-weight: 700;
+}
+
+.remove_fav_text {
+  position: absolute;
+  opacity: 0;
+  font-size: 1.5vmin;
+  background-color: white;
+  color: crimson;
+  bottom: 15px;
+  right: 5px;
+}
+
+.remove_fav:hover + .remove_fav_text {
+  opacity: 1;
+  /* color: black; */
+}
+
+.heart_items {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: gray;
+}

@@ -9,6 +9,7 @@ import axios from "axios";
 const SummerMen = () => {
   const [tone, setTone] = useState("");
   const [body, setBody] = useState("");
+  const [fltr, setFilter] = useState(false);
   const dispatch = useDispatch();
 
   const USER = useSelector((state) => state.user);
@@ -37,11 +38,26 @@ const SummerMen = () => {
 
   const MensSummer = useSelector((state) => state.MensSummer);
   const { loading, products } = MensSummer;
+  const [data, setData] = useState(products);
 
-  const filter = () => {};
+  const clearFilter = () => {
+    setData(products);
+    setFilter(false);
+    setTone("");
+    setBody("");
+  };
+  const filter = () => {
+    setFilter(true);
+    setData(
+      products.filter(
+        (prod) => prod.skin_tone === tone && prod.body_type === body
+      )
+    );
+  };
 
   useEffect(async () => {
     dispatch(getMensSummer());
+    setData(products);
   }, [dispatch]);
 
   return (
@@ -64,6 +80,7 @@ const SummerMen = () => {
                 type="radio"
                 id="fair"
                 name="skin_tone"
+                checked={tone === "fair"}
                 value="fair"
                 onChange={(e) => {
                   settonehandler(e);
@@ -83,6 +100,7 @@ const SummerMen = () => {
                 style={{ width: "20px", height: "20px" }}
                 type="radio"
                 id="dark"
+                checked={tone === "brown"}
                 name="skin_tone"
                 value="brown"
                 onChange={(e) => {
@@ -106,6 +124,7 @@ const SummerMen = () => {
                 type="radio"
                 id="slim"
                 name="body_type"
+                checked={body === "slim"}
                 value="slim"
                 onChange={(e) => {
                   setbodyhandler(e);
@@ -125,6 +144,7 @@ const SummerMen = () => {
                 style={{ width: "20px", height: "20px" }}
                 type="radio"
                 id="fat"
+                checked={body === "fat"}
                 name="body_type"
                 value="fat"
                 onChange={(e) => {
@@ -138,6 +158,7 @@ const SummerMen = () => {
             className="btn"
             onClick={() => {
               // setData([]);
+              clearFilter();
             }}
           >
             Clear All
@@ -148,10 +169,12 @@ const SummerMen = () => {
         </div>
       </div>
       {loading ? (
-        <div>LOADING</div>
+        <div className="Loading_Icon">
+          <img src="https://img.icons8.com/ios/50/000000/spinner-frame-5.png" />
+        </div>
       ) : (
         <div className="summers" style={{ paddingTop: "100px" }}>
-          {products.map((el, idx) => (
+          {(fltr ? data : products).map((el, idx) => (
             <div key={idx}>
               <div className="heart">
                 <i

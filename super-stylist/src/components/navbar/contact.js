@@ -13,7 +13,14 @@ function Contact() {
       {redirect ? (
         <Redirect to="/" />
       ) : (
-        <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingTop: "100px",
+          }}
+        >
           <div className="contact">
             <span className="closebtn" onClick={clickHandler}>
               <i className="fas fa-times"></i>

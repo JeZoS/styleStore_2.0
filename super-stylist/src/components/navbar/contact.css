@@ -1,4 +1,6 @@
 .contact {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, pink 30%, crimson 100%);
   border-radius: 15px;
   position: relative;
   height: 55vh;
@@ -8,11 +10,11 @@
   text-align: right;
   align-items: flex-end;
   justify-content: space-evenly;
-  background-color: white;
-  margin: 5% 30%;
+  /* margin: 5% 30%; */
   padding: 10px 15px;
 }
 .information {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
   right: 70%;
   bottom: 5%;
   position: absolute;
@@ -23,9 +25,9 @@
   color: white;
 }
 .send {
-  background-color: crimson;
-  color: white;
-  border-radius: 20%;
+  background-color: pink;
+  color: black;
+  border-radius: 10px;
   font-size: large;
 }
 .field {
@@ -34,6 +36,7 @@
 }
 .textfield {
   width: 50%;
+  border-radius: 5px;
 }
 .closebtn {
   margin: 0%;

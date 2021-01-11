@@ -8,6 +8,7 @@ const verifyToken = async (req, res, next) => {
     req.headers.authorization.startsWith("Bearer")
   ) {
     try {
+      // console.log(req.headers.authorization);
       token = req.headers.authorization.split(" ")[1];
       //   console.log(token);
       const decode = jwt.verify(token, "MY_SECRET");

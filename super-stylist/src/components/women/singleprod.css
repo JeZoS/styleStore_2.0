@@ -2,10 +2,7 @@
   padding: 20px 10px;
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: row; */
   justify-content: center;
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
 }
 
 .title_rating {
@@ -29,6 +26,7 @@
 }
 
 .singleitem img {
+  object-fit: contain;
   flex: 1;
   height: 80vh;
   width: 100%;
